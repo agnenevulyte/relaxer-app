@@ -31,6 +31,7 @@ const progress = document.getElementById('progress');
 const progressContainer = document.getElementById('progress-container');
 const title = document.getElementById('title');
 const cover = document.getElementById('cover');
+
 // Play song
 const playSong = () => {
     musicContainer.classList.add('play');
@@ -80,3 +81,8 @@ audio.addEventListener('timeupdate', updateProgress)
 
 // Click on progress bar
 progressContainer.addEventListener('click', setProgress);
+
+// volume slider
+window.SetVolume = function(val) {
+    audio.volume = val/100;
+}

@@ -166,6 +166,7 @@ body {
     z-index: 0;
   }
   
+
   .music-container.play .music-info {
     opacity: 1;
     transform: translateY(-100%);
@@ -194,5 +195,13 @@ body {
     height: 100%;
     width: 0%;
     transition: width 0.1s linear;
+  }
+
+    .music-container #sound {
+        display: none;
+    }
+  .music-container.play #sound {
+    opacity: 1;
+    display: flex;
   }
   /*--------music end-------*/

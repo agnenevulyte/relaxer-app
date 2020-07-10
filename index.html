@@ -40,6 +40,10 @@
           <button id="play" class="action-btn action-btn-big">
             <i class="fas fa-play"></i>
           </button>
+          <div id='sound'>
+            <i class="fa fa-volume-up"></i>
+            <input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>
+        </div>
         </div>
       </div>
 
